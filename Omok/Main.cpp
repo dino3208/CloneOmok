@@ -1,4 +1,7 @@
-﻿#include <iostream>
+﻿// 출처 : https://github.com/Bonnate/Cpp_OmkGame
+
+
+#include <iostream>
 #include <Windows.h> // key값, gotoxy 등 여러가지 지원.
 
 
@@ -44,3 +47,82 @@ void InitOmok(char*** arr); // Todo:
 
 // 게임 시작시 오목판과 다른 요소를 그린다.
 void PaintGame(char*** arr); // Todo:
+
+// For Test:
+bool Check33_1111(int row, int col, char* STONE, char*** arr);
+bool Check33_112(int row, int col, char* STONE, char*** arr);
+bool Check33_22(int row, int col, char* STONE, char*** arr);
+void AnnounceRule(int row, int col, char*** arr);
+
+
+// 돌을 찍은 기점에서 4방향*2 체크 [인자:행, 열, 돌모양, 오목판 배열].
+bool CheckFinish(int row, int col, char* STONE, char*** arr); 
+// 검사만 하고 끝내기 때문에 row,col 참조가 불필요하다.
+
+// 게임을 실행한다.
+void RunGame(char*** arr, char& row, char*& col, bool& isBlackTurn); 
+// 게임 상태를 계속 업데이트해야 하기 때문에 row,col을 참조해야 한다.
+
+// 할당된 메모리를 반환한다.
+void ReleaseMemory(char*** arr);
+
+int main()
+{
+	// 흑돌, 백돌이 순서대로 돌아가게 boolean형 선언, 흑돌이 게임을 먼저 시작한다.
+	bool isBlackTurn = TRUE;
+
+	// 현재 커서가 위치한 곳의 좌표를 나타낸다(행과 열).
+	int row, col; // 원본은 char였는데 int로 고쳐보았다.
+
+	// 게임 시작은 오목판 크기의 중심에서 시작한다.
+	row = MAX_ROW_OMOK_SIZE / 2;
+	col = MAX_COL_OMOK_SIZE / 2;
+
+	// 2차원 포인터 char형을 동적할당으로 선언한다.
+
+}
+
+bool Check33_1111(int row, int co, const char* STONE, char*** arr)
+{
+
+}
+
+bool Check33_112(int row, int col, const char* STONE, char*** arr)
+{
+
+}
+
+bool Check33_22(int row, int col, char* STONE, char*** arr)
+{
+
+}
+
+void AnnounceRule(int row, int col, char*** arr)
+{
+
+}
+
+bool CheckFinish(int row, int col, const char* STONE, char*** arr)
+{
+
+}
+
+void InitOmok(char*** arr)
+{
+
+}
+
+void PaintGame(char*** arr)
+{
+
+}
+
+void RunGame(char*** arr, char& row, char* col, bool& isBlackTurn)
+{
+
+}
+
+void ReleaseMemory(char*** arr)
+{
+	// 2차원 배열 반환.
+}
