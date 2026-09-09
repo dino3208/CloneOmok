@@ -1,0 +1,14 @@
+{
+    "version": 1,
+    "revision": 0,
+    "rules": [
+        {
+            "primary-output": "C:\\Workspace\\Omok\\Intermediates\\Debug\\Omok\\Main.obj",
+            "outputs": [
+                "C:\\Workspace\\Omok\\Intermediates\\Debug\\Omok\\Main.cpp.obj.dt.module.json",
+                "C:\\Workspace\\Omok\\Intermediates\\Debug\\Omok\\Main.cpp.obj.dt.d.json"
+            ],
+            "requires": []
+        }
+    ]
+}
